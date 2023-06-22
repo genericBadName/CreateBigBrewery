@@ -25,9 +25,11 @@ import org.slf4j.Logger;
 @Mod(BigBrewery.MODID)
 public class BigBrewery {
     public static final String MODID = "bigbrewery";
+
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public BigBrewery() {
         MinecraftForge.EVENT_BUS.register(this);
+
     }
 }
