@@ -1,0 +1,7 @@
+// 1.19.2	2023-06-23T11:11:05.6220533	Registrate Provider for bigbrewery [Recipes, Advancements, Loot tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+57ca76ff1aef4cff1162cc3f5d92f4939dd24b9b assets/bigbrewery/lang/en_ud.json
+95abc93b925a3574a831f35af56b607406d5e8d3 assets/bigbrewery/lang/en_us.json
+3a1af9d05e10ba4dddc7329fe4cb7ec5dde93b55 assets/bigbrewery/models/item/cold_red_grape.json
+696a1323c61c648f4874f5e1cde99fa94e1d4762 assets/bigbrewery/models/item/cold_white_grape.json
+9873317dfaaf40aab8ca018d083cd73ba060f6c0 assets/bigbrewery/models/item/warm_red_grape.json
+7028f55a82a5b1a550a6bd756d04fcb204015803 assets/bigbrewery/models/item/warm_white_grape.json

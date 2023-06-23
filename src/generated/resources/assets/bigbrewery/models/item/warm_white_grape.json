@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bigbrewery:item/warm_white_grape"
+  }
+}
