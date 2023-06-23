@@ -1,5 +1,6 @@
 package com.genericbadname.bigbrewery;
 
+import com.genericbadname.bigbrewery.content.fluid.ModFluids;
 import com.genericbadname.bigbrewery.content.item.ModItems;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.minecraftforge.common.MinecraftForge;
@@ -22,6 +23,7 @@ public class BigBrewery {
 
         // registry junk
         ModItems.register();
+        ModFluids.register();
 
         REGISTRATE.registerEventListeners(eventBus);
 
