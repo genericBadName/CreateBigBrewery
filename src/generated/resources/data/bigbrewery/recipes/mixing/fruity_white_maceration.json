@@ -1,0 +1,14 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "bigbrewery:warm_white_grape"
+    }
+  ],
+  "results": [
+    {
+      "amount": 125,
+      "fluid": "bigbrewery:fruity_white_grape_juice"
+    }
+  ]
+}
