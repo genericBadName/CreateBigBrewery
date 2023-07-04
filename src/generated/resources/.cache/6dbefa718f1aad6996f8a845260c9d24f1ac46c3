@@ -1,5 +1,6 @@
-// 1.19.2	2023-06-23T16:55:49.9939273	Big Brewery Processing Recipes
+// 1.19.2	2023-07-04T15:04:42.946504	Big Brewery Processing Recipes
+7f7effba9df6967c1791eb412e2985994cc7cca0 data/bigbrewery/recipes/fermentation/elegant_red_fermentation.json
 ee2200e64e5558ffebc58e21ee64c45a189855eb data/bigbrewery/recipes/mixing/crisp_red_maceration.json
-c3b3aab345aaa4e940f125560eb8bf328a525fa5 data/bigbrewery/recipes/mixing/crisp_white_maceration.json
+2ed7c5aaa2a99bd6caae50f5bbac4a885c0e56d3 data/bigbrewery/recipes/mixing/crisp_white_maceration.json
 fda5e4484fc856f7edd89bbb366e96c0c490e1d1 data/bigbrewery/recipes/mixing/fruity_red_maceration.json
 35f1c2c0cea748b8fcac44768831c3ce18c127a2 data/bigbrewery/recipes/mixing/fruity_white_maceration.json

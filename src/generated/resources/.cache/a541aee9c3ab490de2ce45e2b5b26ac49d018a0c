@@ -1,7 +1,12 @@
-// 1.19.2	2023-06-23T16:40:44.2610005	Registrate Provider for bigbrewery [Recipes, Advancements, Loot tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
-4bc5d8bb001d914f73fe1569e900392fd172fc68 assets/bigbrewery/lang/en_ud.json
-9d670384de06d6e445a42b0fca2435f2d55cafbd assets/bigbrewery/lang/en_us.json
+// 1.19.2	2023-06-25T16:21:32.0260231	Registrate Provider for bigbrewery [Recipes, Advancements, Loot tables, Tags (blocks), Tags (items), Tags (fluids), Tags (entity_types), Blockstates, Item models, Lang (en_us/en_ud)]
+232f550df86737bdfe48fee850c4d88fc551c0bd assets/bigbrewery/blockstates/lid.json
+290624ebc35b3adf638d1470abb2761c9517c580 assets/bigbrewery/lang/en_ud.json
+6c3a7acba2f2fd5129f0c7f3f8af69d42013caab assets/bigbrewery/lang/en_us.json
 3a1af9d05e10ba4dddc7329fe4cb7ec5dde93b55 assets/bigbrewery/models/item/cold_red_grape.json
 696a1323c61c648f4874f5e1cde99fa94e1d4762 assets/bigbrewery/models/item/cold_white_grape.json
+43b055680cd54d326a4cd7c731e1f3112c640580 assets/bigbrewery/models/item/lid.json
 9873317dfaaf40aab8ca018d083cd73ba060f6c0 assets/bigbrewery/models/item/warm_red_grape.json
 7028f55a82a5b1a550a6bd756d04fcb204015803 assets/bigbrewery/models/item/warm_white_grape.json
+8282ceb908be80a10b6039cd265735cdcabee5a5 data/bigbrewery/loot_tables/blocks/lid.json
+e54acaf8c28ebf33fd0211f19fc0c5d753c78112 data/minecraft/tags/blocks/mineable/axe.json
+e54acaf8c28ebf33fd0211f19fc0c5d753c78112 data/minecraft/tags/blocks/mineable/pickaxe.json

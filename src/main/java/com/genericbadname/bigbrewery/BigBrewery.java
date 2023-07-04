@@ -2,18 +2,22 @@ package com.genericbadname.bigbrewery;
 
 import com.genericbadname.bigbrewery.content.fluid.ModFluids;
 import com.genericbadname.bigbrewery.content.item.ModItems;
+import com.genericbadname.bigbrewery.data.recipe.FermentationRecipeGen;
 import com.genericbadname.bigbrewery.data.recipe.WineMacerationRecipeGen;
 import com.simibubi.create.Create;
+import com.simibubi.create.CreateClient;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.recipe.MillingRecipeGen;
 import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
@@ -31,16 +35,23 @@ public class BigBrewery {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public BigBrewery() {
-        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus forgeEventBus = MinecraftForge.EVENT_BUS;
 
         // registry junk
-        ModItems.register();
-        ModFluids.register();
+        REGISTRATE.registerEventListeners(modEventBus);
 
-        REGISTRATE.registerEventListeners(eventBus);
+        ModItems.register();
+        ModBlocks.register();
+        ModBlockEntityTypes.register();
+        ModFluids.register();
+        ModRecipeTypes.register(modEventBus);
 
         // mod events
-        eventBus.addListener(EventPriority.LOWEST, BigBrewery::gatherData);
+        modEventBus.addListener(EventPriority.LOWEST, BigBrewery::gatherData);
+
+        // setup client
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> BigBreweryClient.onCtorClient(modEventBus, forgeEventBus));
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -53,6 +64,7 @@ public class BigBrewery {
 
             // recipe generators
             GENERATORS.add(new WineMacerationRecipeGen(gen));
+            GENERATORS.add(new FermentationRecipeGen(gen));
 
             gen.addProvider(true, new DataProvider() {
                 @Override

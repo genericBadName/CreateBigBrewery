@@ -1,0 +1,17 @@
+{
+  "type": "bigbrewery:fermentation",
+  "ingredients": [
+    {
+      "amount": 250,
+      "fluid": "bigbrewery:fruity_red_grape_juice",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 100,
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "bigbrewery:elegant_red_grape_juice"
+    }
+  ]
+}

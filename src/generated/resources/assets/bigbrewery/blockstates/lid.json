@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "bigbrewery:block/lid/block",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "bigbrewery:block/lid/block"
+    },
+    "facing=south": {
+      "model": "bigbrewery:block/lid/block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bigbrewery:block/lid/block",
+      "y": 270
+    }
+  }
+}
