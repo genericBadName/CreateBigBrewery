@@ -8,6 +8,7 @@ import com.jozufozu.flywheel.core.materials.oriented.OrientedData;
 import com.mojang.math.Quaternion;
 import com.mojang.math.Vector3f;
 import com.simibubi.create.content.kinetics.base.ShaftInstance;
+
 import com.simibubi.create.foundation.utility.AngleHelper;
 import com.simibubi.create.foundation.utility.AnimationTickHolder;
 
@@ -36,14 +37,16 @@ public class LidInstance extends ShaftInstance<LidBlockEntity> implements Dynami
     }
 
     private void transformModels() {
-        float renderedHeadOffset = getRenderedHeadOffset(blockEntity);
+        float renderedHeadOffset = getRenderedHeadOffset(blockEntity) * LidRenderer.HEAD_OFFSET;
 
         lidHead.setPosition(getInstancePosition())
                 .nudge(0, -renderedHeadOffset, 0);
     }
 
-    private float getRenderedHeadOffset(LidBlockEntity be) {
-        return be.getRenderedHeadOffset(AnimationTickHolder.getPartialTicks()) * LidRenderer.HEAD_OFFSET;
+    private float getRenderedHeadOffset(LidBlockEntity press) {
+        LidPressingBehaviour pressingBehaviour = press.getPressingBehaviour();
+        return pressingBehaviour.getRenderedHeadOffset(AnimationTickHolder.getPartialTicks())
+                * pressingBehaviour.mode.headOffset;
     }
 
     @Override

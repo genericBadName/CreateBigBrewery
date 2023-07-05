@@ -47,7 +47,6 @@ public class LidPressingBehaviour extends PressingBehaviour {
             return;
         }
 
-        LogManager.getLogger().info(runningTicks);
         if (level.isClientSide && runningTicks == -EXTENDED_CYCLE / 2) {
             prevRunningTicks = EXTENDED_CYCLE / 2;
             return;
