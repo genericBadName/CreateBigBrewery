@@ -3,14 +3,14 @@
   "ingredients": [
     {
       "amount": 250,
-      "fluid": "bigbrewery:fruity_red_grape_juice",
+      "fluid": "bigbrewery:fruity_white_grape_juice",
       "nbt": {}
     }
   ],
   "results": [
     {
       "amount": 250,
-      "fluid": "bigbrewery:elegant_red_grape_juice"
+      "fluid": "bigbrewery:elegant_white_grape_juice"
     }
   ]
 }

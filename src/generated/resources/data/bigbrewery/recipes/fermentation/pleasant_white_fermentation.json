@@ -1,16 +1,17 @@
 {
   "type": "bigbrewery:fermentation",
+  "heatRequirement": "heated",
   "ingredients": [
     {
       "amount": 250,
-      "fluid": "bigbrewery:fruity_red_grape_juice",
+      "fluid": "bigbrewery:crisp_white_grape_juice",
       "nbt": {}
     }
   ],
   "results": [
     {
       "amount": 250,
-      "fluid": "bigbrewery:elegant_red_grape_juice"
+      "fluid": "bigbrewery:pleasant_white_grape_juice"
     }
   ]
 }

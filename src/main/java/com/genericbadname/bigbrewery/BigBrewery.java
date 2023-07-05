@@ -12,6 +12,7 @@ import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -84,5 +85,9 @@ public class BigBrewery {
                 }
             });
         }
+    }
+
+    public static ResourceLocation asResource(String id) {
+        return new ResourceLocation(BigBrewery.MOD_ID, id);
     }
 }
